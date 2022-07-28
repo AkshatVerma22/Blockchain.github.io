@@ -1,0 +1,878 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Blockchain Development Roadmap</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round|Raleway">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Mukta:wght@200&family=Orbitron&family=Poppins:wght@100&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Poppins:wght@100&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Orbitron&family=Poppins:wght@100&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cabin&family=Mochiy+Pop+One&family=Mukta:wght@200&family=Orbitron&family=Poppins:wght@100&display=swap');
+        
+        .main {
+            background: url("images/marjan-blan-marjanblan-9tqAeLDQT-o-unsplash.jpg");
+
+            background-repeat: round;
+            overflow-x: hidden;
+        }
+        a.dropdown-item{
+            color: greenyellow;
+        }
+        i.fa:hover {
+            color: greenyellow;
+
+        }
+        .fa {
+            color: aliceblue;
+        }
+        .fa-gmail {
+            content: url('images/gmail-2981844-2476484.webp');
+            height: 1em;
+            width: auto;
+
+
+        }
+        .d-block {
+            height: 650px;
+            filter: blur(2px);
+            padding: 20px;
+        }
+        a.btn {
+            color: greenyellow;
+            font-size: 40px;
+
+            border-radius: 20px;
+            text-align: center;
+            padding: none;
+            border-color: aliceblue;
+        }
+        a.btn:hover {
+            color: rgb(255, 254, 254);
+            background-color: rgba(0, 0, 0, 0.514);
+        }
+        .app-link {
+            color: greenyellow;
+            text-decoration: none;
+
+        }
+        a.app-link:hover {
+            color: rgb(149, 147, 147);
+            text-decoration: none;
+        }
+        h1.jumbotron-heading {
+            font-family: 'Orbitron', sans-serif;
+            color: greenyellow;
+            margin: 0%;
+
+
+
+        }
+        .btn-secondary {
+            background-color: rgba(2, 2, 2, 0.39);
+        }
+
+        .dropdown-menu {
+            background-color: rgba(2, 2, 2, 0.39);
+        }
+        .skills-drop {
+            color: greenyellow;
+        }
+        .dropdown-toggle {
+            color: greenyellow;
+        }
+        h6 {
+            font-size: 40px;
+            padding: 10px;
+            text-align: center;
+            background-color: rgba(34, 35, 37, 0.66);
+            font-family: 'Orbitron', sans-serif;
+            color: greenyellow;
+            padding: 20px;
+
+
+        }
+        .card-body {
+            background-color: rgba(6, 6, 6, 0.823);
+            padding: 20px;
+            width: 100%;
+        }
+        .card-text {
+            font-size: 30px;
+            color: aliceblue;
+            font-family: 'Poppins', sans-serif;
+
+        }
+        .row {
+            padding: 20px;
+            align-items: left;
+        }
+
+        .blog-main {
+            padding: 20px;
+            margin-top: 60px;
+
+        }
+        li.blog-post-title {
+            color: greenyellow;
+            list-style: circle;
+
+        }
+        .blog-post-title {
+            font-size: 50px;
+            color: white;
+            font-family: 'Orbitron', sans-seri;
+            width: 80%;
+
+        }  
+        
+        .scl{
+            color: greenyellow;
+                        background-color: transparent;
+                        font-size: 25px;
+                        padding: 20px;
+                        text-align: center;
+        }
+        .scl:hover{
+            color: white;
+            text-decoration: none;
+        }
+
+        .Smart-contract-btn {
+            background-color: rgba(30, 29, 29, 0.606);
+            border-radius: 25px;
+            border-color: white;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .Smart-contract-btn:hover {
+            background-color: black;
+
+        }
+        a.ride {
+            color: white;
+            background-color: transparent;
+            font-size: 30px;
+            margin: 10px;
+            padding: 20px;
+        }
+        a.ride:hover {
+            color: greenyellow;
+            text-decoration: none;
+        }    
+        ul.node li::before {
+            content: "\2022";
+            color: greenyellow;
+            font-weight: bold;
+            margin: 10px;
+            display: inline-block;
+            margin-left: -1em;
+        }
+        .metamask{
+            color:greenyellow;
+            font-size:20px;
+        }
+        .metamask:hover{
+            color:white;
+            text-decoration: none;
+        }
+        .meta-btn{
+            background-color:rgba(58, 56, 56, 0.411) ;
+            color: azure;
+            border-color: white;
+            margin-top: 20px;
+        }
+        .meta-btn:hover{
+            background-color: black;
+        }
+        .learn-more {
+            color: greenyellow;
+            font-size: 17px;
+            padding: 10px
+        }
+        .learn-more:hover {
+            text-decoration: none;
+            color: white;
+
+        }
+        .learn-more-btn {
+
+            background-color: rgba(54, 52, 52, 0.565);
+            border-color: white
+        }
+        .learn-more-btn:hover {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark py-1 sticky-top" style="   background-color: rgba(0, 0, 0, 0.813);
+    ">
+        <!-- Image and text -->
+        <nav class="navbar-1 navbar-light ">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo3-removebg-preview.png" width="40" height="40"
+                    class="d-inline-block align-top text-white" alt="">
+                <span class="text text-white margin:auto" style=" margin-left: 10px;">Blockchain</span> <span class="green" style="   color: greenyellow;
+                font-size: larger;">.</span></div>
+            </a>
+        </nav>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto  " style=" margin-right: auto !important;
+            margin: auto;
+            font-size: larger;">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item  ">
+                    <a class="nav-link " href="https://anubhavkaro.medium.com/blockchain-zero-to-hero-4fc969da6286">Blog</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Tutorials
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown"  >
+                        <a class="dropdown-item" href="https://youtu.be/NqGe942J4Y0">Solidity</a>
+                        <a class="dropdown-item" href="https://www.youtube.com/watch?v=6mbwJ2xhgzM&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg">WEB DEV.</a>
+                        
+                        <a class="dropdown-item" href="https://drive.google.com/drive/folders/10QIQoR3_ccVXlfqFrt-Pek6Tz6EPOJAn?usp=sharing">Blockchai A-Z</a>
+                    </div>
+                </li>
+                
+            </ul>
+            <a href="https://github.com/AkshatVerma22" class="nav-item nav-link"><i class="fa fa-github" style="font-size:30px"></i></a>
+            <a href="https://www.instagram.com/__akshhhh.__/" class="nav-item nav-link"><i class="fa fa-instagram" style="font-size:30px ;"></i></a>
+            <a href="mailto:akshat.verma2208@gmail.com" class="nav-item nav-link"><i class="fa fa-gmail" style="font-size:30px ;"></i></a>
+        </div>
+    </nav>
+
+    <!---------------------------------------------------------------------------------->
+    <section class="main">
+
+        <div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100  " src="images/photo-1451187580459-43490279c0fa.avif"   alt="First slide"  >
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2 class="heading" style="  text-align: center;
+                        margin-bottom: 20%;
+                        font-size: 80px;
+                        padding: none;">Blockchain Dev<span class="dot" style=" font-size: 68px;
+            color: greenyellow;">.</span></h2>
+                        <a href="https://www.synopsys.com/glossary/what-is-blockchain.html"
+                            class="btn btn-outline-secondary"> What is Blockchain?</a>
+
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/shubham-dhage-R2HtYWs5-QA-unsplash.jpg" alt="Second slide">
+                    <div class="carousel-caption d-none d-md-block">
+
+                        <section class="jumbotron text-center" style="   background: none;
+                        text-align: left;">
+                            <div class="container">
+                                <h1 class="jumbotron-heading">Blockchain Software Developers</h1>
+                                <p class="lead" style="    font-size: x-large;
+                                font-family: 'Mukta', sans-serif;
+                                font-weight: bold;
+                                color: white;
+                                margin-bottom: 5%;
+                    ">A blockchain developer develops <a class="app-link"
+                                        href="https://decrypt.co/resources/what-are-decentralized-applications-dapps">decentralized
+                                        applications (dApps)</a> and smart contracts based on an existing blockchain
+                                    network
+                                    such as bitcoin, ethereum, etc. as well as understanding the architecture and
+                                    protocols
+                                    of the technology. They are responsible for developing 3D models, 3D designs, and 3D
+                                    content such as that used in games</p>
+                                <p>
+                                <div class="btn-group">
+                                    <button class="btn btn-secondary btn-lg dropdown-toggle" type="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Skills Required
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <ul class="skills-drop">
+                                            <li>Solidity</li>
+                                            <li>JavaScript</li>
+                                            <li>Python(Optional)</li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                </p>
+                            </div>
+                        </section>
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100 " src="images/choong-deng-xiang-EbbqeyHpbto-unsplash.jpg"
+                        alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+
+                        <section class="jumbotron text-center" style="background: none;
+                        text-align: left;">
+                            <div class="container">
+                                <h1 class="jumbotron-heading-core" style="font-family: 'Orbitron', sans-serif;
+                                color: greenyellow;
+                    
+                                margin: 0%;">Blockchain Core Developers</h1>
+                                <p class="lead-core" style=" font-size: x-large;
+                                font-family: 'Mukta', sans-serif;
+                                font-weight: bolder;
+                                color: white;
+                                margin-bottom: 7%;">A Core Blockchain Developer designs the security and the
+                                    architecture
+                                    of the proposed Blockchain system. In essence, the Core Blockchain Developer creates
+                                    the
+                                    foundation upon which others will then build upon.</p>
+                                <p>
+                                <div class="btn-group">
+                                    <button class="btn btn-secondary btn-lg dropdown-toggle" type="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Skills Required
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <ul class="skills-drop">
+                                            <li>GO</li>
+                                            <li>C++</li>
+                                            <li>Rust</li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                </p>
+                            </div>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+
+
+        <!-- --------------------------------------------------------------------------------------------- -->
+        <div class="lang" style=" margin-top: 20px;
+        display: block;
+        align-items: center;
+        width: 100%;
+        padding: 20px;">
+
+            <div class="lh-100">
+                <h6>Languages To Learn!</h6>
+
+            </div>
+        </div>
+
+        <section class="Languages-to-learn" style="backdrop-filter:blur(5px) ; background-color: rgba(0, 0, 0, 0.425);
+        margin: 20px;
+        padding: 20px;;">
+
+            <div class="album  ">
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card mb-4 box-shadow">
+                                <img class="card-img-top" alt="Thumbnail [100%x225]"
+                                    style="height: 225px; width: 100%; display: block;" src="images/sol.png"
+                                    data-holder-rendered="true">
+                                <div class="card-body">
+                                    <h1 style="color:rgba(98, 150, 239, 0.539) ;">Solidity</h1>
+                                    <p style="color:white;font-family: 'Poppins', sans-serif; ">
+                                        Solidity is an object-oriented, high-level language for
+                                        implementing smart contracts. Smart contracts are programs which govern the
+                                        behaviour of accounts within the Ethereum state.
+
+                                        Solidity is a curly-bracket language designed to target the Ethereum Virtual
+                                        Machine (EVM). It is influenced by C++, Python and JavaScript. You can find more
+                                        details about which languages Solidity has been inspired by in the language
+                                        influences section.
+
+                                        Solidity is statically typed, supports inheritance, libraries and complex
+                                        user-defined types among other features.
+
+                                        With Solidity you can create contracts for uses such as voting, crowdfunding,
+                                        blind auctions, and multi-signature wallets.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-4 box-shadow">
+                                <img class="card-img-top" alt="Thumbnail [100%x225]"
+                                    style="height: 225px; width: 100%; display: block;"
+                                    src="images/Unofficial_JavaScript_logo_2.svg.png" data-holder-rendered="true">
+                                <div class="card-body">
+                                    <p class="text" style="color:white;font-family:'Poppins', sans-serif;">JavaScript
+                                        (often shortened to JS) is a lightweight, interpreted, object-oriented language
+                                        with first-class functions, and is best known as the scripting language for Web
+                                        pages, but it's used in many non-browser environments as well. It is a
+                                        prototype-based, multi-paradigm scripting language that is dynamic, and supports
+                                        object-oriented, imperative, and functional programming styles.
+
+                                        JavaScript runs on the client side of the web, which can be used to design /
+                                        program how the web pages behave on the occurrence of an event. JavaScript is an
+                                        easy to learn and also powerful scripting language, widely used for controlling
+                                        web page behavior.
+                                    </p>
+                                    <button
+                                        style="border-color: white ;padding:5px ;background-color:rgba(0, 0, 0, 0.463);border-width: 1px;">
+                                        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/About_JavaScript"
+                                            style="color:greenyellow;">Learn More</a>
+                                    </button>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card mb-4 box-shadow">
+                                <img class="card-img-top" alt="Thumbnail [100%x225]"
+                                    style="height: 225px; width: 100%; display: block;"
+                                    src="images/Python-Logo-with-turtle.webp" data-holder-rendered="true">
+                                <div class="card-body">
+                                    <p style="font-family:'Poppins', sans-serif;color: white;font-size: 19px;">Python is
+                                        a high-level, interpreted, general-purpose programming language. Its design
+                                        philosophy emphasizes code readability with the use of significant
+                                        indentation.[31]
+
+                                        Python is dynamically-typed and garbage-collected. It supports multiple
+                                        programming paradigms, including structured (particularly procedural),
+                                        object-oriented and functional programming. It is often described as a
+                                        "batteries included" language due to its comprehensive standard library</p>
+
+                                </div>
+                            </div>
+                        </div>
+
+        </section>
+
+        <!-- ------------------------------------------------------------------------------------- -->
+
+
+        <div class=" blog-main">
+            <h3 class="tools-you-need pb-3 mb-4  border-bottom" style="color: greenyellow;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 60px;
+            /* background-color: rgba(29, 28, 28, 0.656); */
+            padding: 10px;width:100%">
+                Tools You Need<span style="color:white;">!</span>
+            </h3>
+            <section class="tyn" style="backdrop-filter:blur(5px) ;  background-color: rgba(0, 0, 0, 0.425);
+            margin: 20px;
+            padding: 10px">
+                <div class="blog-post">
+                    <ul class="blog-post-title">
+                        <li class="blog-post-title">
+                            <h2 style="font-size:40px;color:white">Smart Contracts<span class="dot">.</span></h2>
+                        </li>
+
+                    </ul>
+
+
+                    <img class="scw img-responsive" style="width:40%;margin:20px" src="images/Smart-contract-and-its-overview.png" alt="">
+
+
+                    <p class="blog-post-meta" style=" color: aliceblue;
+                    margin: 10px;
+        ">How Does Smart Contract Work?</p>
+
+                    <button class="Smart-contract-btn">
+                        <a class="scl" 
+                            href="https://www.ibm.com/in-en/topics/smart-contracts#:~:text=Smart%20contracts%20are%20simply%20programs,intermediary's%20involvement%20or%20time%20loss.">
+                            Learn about Smart Contracts!
+
+                        </a>
+                    </button>
+                    <h2 class="IDE" style=" font-size: 60px;
+                    color: white;
+                    font-family: 'Mukta', sans-serif;
+                    margin-top: 20px;">IDE<span class="dot" style="color:greenyellow ;">.</span></h2>
+                    <img class="" style="width:60%;padding: 20px;" src="images/remix.png" alt=""> <br>
+                    <button style="margin-left: 20px;   background-color: rgba(0, 0, 0, 0.421);
+                    border-color: white;" class="remix-btn">
+                        <a class="ride" href="https://remix-project.org/">Remix IDE</a>
+                    </button>
+                    <p class="blog-post-meta" style=" color: aliceblue;
+                    margin: 10px;
+        ">Click to open remix IDE</p>
+
+                </div><!-- /.blog-post -->
+
+                <div class="">
+                    <ul>
+                        <li class="" style="list-style:circle;color:greenyellow;font-size:40px">
+                            <div style="font-size:100%;color:white;font-family:'Orbitron', sans-serif;;">Full Stack
+                                Applications<span style="color:greenyellow ;">.</span></div>
+
+                        </li>
+                    </ul>
+
+                    <div class="truffle row">
+
+
+                        <img class="truffle-logo" src="images/truffle logo.png" style="width: 180px ; padding: 20px;" alt="">
+
+                    </div>
+
+                    <p style="color: white; font-size:20px;font-family:'Poppins', sans-serif; margin:20px">
+                        Truffle is a development environment, testing framework and asset pipeline for blockchains
+                        using the Ethereum Virtual Machine (EVM), which makes it easy for a blockchain developer. <br>
+                        With
+                        Truffle, you get: <br>
+                    <ul style="color:white ; font-size:20px;font-family:'Poppins', sans-serif;">
+
+                        <li>
+                            Built-in smart contract compilation, linking, deployment and binary management.
+                        </li>
+                        <li>
+                            Automated contract testing for rapid development.
+                        </li>
+                        <li>
+                            Scriptable, extensible deployment & migrations framework.
+                        </li>
+                        <li>
+                            Network management for deploying to any number of public & private networks.
+                        </li>
+                        <li>
+                            Package management with EthPM & NPM, using the ERC190 standard.
+                        </li>
+                        <li>
+                            Interactive console for direct contract communication.
+                        </li>
+                        <li>
+                            Configurable build pipeline with support for tight integration.
+                        </li>
+                        <li>
+                            External script runner that executes scripts within a Truffle environment.
+                        </li>
+                    </ul>
+                    <p style="color:white ;margin:20px;">
+                        For more info <a href="https://trufflesuite.com/docs/"
+                            style="text-decoration: none;color:greenyellow;;">Click here</a>
+                    </p>
+
+                    </p>
+                </div><!-- /.blog-post -->
+
+                <img src="images/gnache-removebg-preview.png" style="width: 300px ;" alt="">
+
+                <p style="color:white ;padding:20px; font-size:20px;font-family:'Poppins', sans-serif;">
+                    Ganache is a personal blockchain for rapid Ethereum and Corda distributed application development.
+                    You can use Ganache across the entire development cycle; enabling you to develop, deploy, and test
+                    your dApps in a safe and deterministic environment. <br>
+
+                    Ganache comes in two flavors: a UI and CLI. Ganache UI is a desktop application supporting both
+                    Ethereum and Corda technology. The command-line tool, ganache-cli (formerly known as the TestRPC),
+                    is available for Ethereum development.
+                </p>
+                <img src="images/ganache-window.png" style="width:40% ;margin:20px;" alt="">
+                <div class="row">
+                    <img src="images/MetaMask_Fox.svg.png" style="width: 100px;margin-top:10px;" alt="">
+                    <h1 style="padding:25px;padding-left: none ;color: white;">METAMASK</h1>
+                </div>
+
+                <p style="color:white ;; font-size:20px;font-family:'Poppins', sans-serif;">
+                    Metamask is an ethereum wallet in your browser
+                    which is an extension for accessing ethereum enabled distributed applications, or "Dapps" in your
+                    browser! <br>
+
+                    The extension injects the Ethereum web3 API into every website's javascript context, so that dapps
+                    can read from the blockchain. <br>
+                    MetaMask also lets the user create and manage their own identities, so when a Dapp wants to perform
+                    a transaction and write
+                    to the blockchain, the user gets a secure interface to review the transaction, before approving or
+                    rejecting it. <br>
+
+                    <button class="meta-btn">
+
+                        <a class="metamask"href="https://metamask.io/" >
+                            Create Meta Mask Wallet
+                        </a>
+
+                    </button>
+                </p>
+                <img src="images/Institutional-Illustration.webp" style="width:40%" alt="">
+
+                <div>
+
+                </div>
+
+        </div>
+
+
+
+        <!-- ------------------------------------------------------------------------------------ -->
+
+
+        <div class="border-bottom"
+            style="font-size:40px;text-align:center;font-family:'Orbitron', sans-serif;color: greenyellow;padding: 20px;margin: 20px;">
+            Framework & Libraries</div>
+        <section style="background-color:rgba(0, 0, 0, 0.425);backdrop-filter: blur(5px);margin:20px;padding:20px">
+
+            <div class="album  ">
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class=" mb-4 box-shadow">
+                                <img class="card-img-top"
+                                    style="background-color: transparent;height: 225px; width: 100%; display: block;"
+                                    src="images/node-js-removebg-preview.png">
+                                <p style="text-align: center;padding:20px; font-size:40px;color:white">
+                                    Node<span style="color:greenyellow ;">.</span>Js
+
+                                </p>
+                                <ul class="node"
+                                    style="color: white;list-style:none;font-family:'Poppins', sans-serif;">
+                                    <li>Node.js is an open source server environment</li>
+                                    <li>Node.js is free</li>
+                                    <li>Node.js runs on various platforms</li>
+                                    <li>Node.js uses JavaScript on the server</li>
+                                    <li>Node.js can generate dynamic page content
+                                    </li>
+                                    <li> Node.js can create, open, read, write, delete, and close files on the server
+                                    </li>
+                                    <li>Node.js can collect form data</li>
+                                    <li>Node.js can add, delete, modify data in your database</li>
+                                </ul>
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="mb-4 box-shadow">
+                                <img class="card-img-top" alt="Thumbnail [100%x225]"
+                                    style="height: 225px; width: 100%; display: block;" src="images/react-logo.png"
+                                    data-holder-rendered="true">
+                                <p style="text-align: center;padding:20px; font-size:40px;color:white">
+                                    React<span style="color:greenyellow ;">.</span>Js
+                                </p>
+                                <ul class="node"
+                                    style="color: white;list-style:none;font-family:'Poppins', sans-serif;">
+                                    <li>React, sometimes referred to as a frontend JavaScript framework, is a JavaScript
+                                        library created by Facebook.
+
+
+
+                                    </li>
+                                    <li> React is a tool for building UI components</li>
+                                    <li>Instead of manipulating the browser's DOM directly, React creates a virtual DOM
+                                        in memory, where it does all the necessary manipulating, before making the
+                                        changes in the browser DOM.</li>
+                                    <li>React finds out what changes have been made, and changes only what needs to be
+                                        changed.</li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <img src="images/web3js-logo-62DEE79B50-seeklogo.com.png" style="padding:20px" ; alt="">
+                        <div class="row" style="font-size:40px;color:white">
+                            Web3<span style="color:greenyellow ;">.</span>Js
+                        </div>
+                        <br>
+                        <p style="font-size:20px;font-family:'Poppins', sans-serif;color: white;">
+
+                            There are a few different aspects to developing blockchain applications with Ethereum: <br>
+
+                            1. Smart contract development - writing code that gets deployed to the blockchain with the
+                            Solidity
+                            programming language.<br>
+                            2. Developing websites or clients that interact with the blockchain - writing code that
+                            reads and
+                            writes data from the blockchain with smart contracts. <br>
+                            Web3.js enables you to fulfill the second responsibility: developing clients that interact
+                            with
+                            The Etherem Blockchain. It is a collection of libraries that allow you to perform actions
+                            like
+                            send Ether from one account to another, read and write data from smart contracts, create
+                            smart
+                            contracts, and so much more!
+                            Instead of using a jQuery to read and write data from a web server, you can use Web3.js to
+                            read
+                            and write to The Ethereum Blockchain.
+                        </p>
+                        <img clas="img-responsive" src="images/web3-js-diagram.png" style="width: 60%; padding-top:30px"
+                            alt="">
+
+                    </div>
+
+
+        </section>
+
+
+<!-- --------------------------------------------------------------------------------------- -->
+
+
+        <div class="border-bottom"
+            style="width:100% ;text-align:left;margin:20px;padding:20px;border-color:white;font-size:50px;margin:20px;color:greenyellow;font-family:'Orbitron', sans-serif; ">
+            NEXT STEP <span style="color:white ;">!</span>
+        </div>
+
+        <section style="margin:20px;padding:20px;background-color:rgba(0, 0, 0, 0.425);backdrop-filter: blur(5px);">
+            <div style="color:aquamarine;font-size: 40px;;font-family:'Mukta', sans-serif;">
+                Learning Web Dev<span style="color:white;">.</span>
+            </div>
+            <p style="font-size:20px;color:white;font-family:'Poppins'">Learing Web development is an essiential skill
+                to learn not only for
+                blockchain development but for recruitment in various companies as most of the recruiters look for this
+                skill in today's world. Web development is an easy to learn,fun and very useful skill one must develop
+                for the technical world.<br><br>
+                The 3 basic skills required to become a web-developer are :
+            <ul style="font-size:20px;color:greenyellow">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Java Script</li>
+            </ul>
+            </p> <br>
+            <div style="color:aquamarine;font-size: 40px;font-family:'Mukta', sans-serif;">
+                Cryptography<span style="color:white;">.</span>
+            </div> <br>
+            <img src="images/cryptography.png" style="width:40%; margin-bottom: 20px;" alt="">
+            <div style="font-size:20px;color:white;font-family:'Poppins'">
+
+                Cryptography is technique of securing information and communications through use of codes so that only
+                those
+                person for whom the information is intended can understand it and process it. Thus preventing
+                unauthorized
+                access to information. The prefix “crypt” means “hidden” and suffix graphy means “writing”.
+
+                In Cryptography the techniques which are use to protect information are obtained from mathematical
+                concepts
+                and a set of rule based calculations known as algorithms to convert messages in ways that make it hard
+                to
+                decode it. These algorithms are used for cryptographic key generation, digital signing, verification to
+                protect data privacy, web browsing on internet and to protect confidential transactions such as credit
+                card
+                and debit card transactions.
+            </div> <br>
+            <button class="learn-more-btn">
+                <a class="learn-more" href="https://www.geeksforgeeks.org/cryptography-and-its-types/">Learn More</a>
+            </button>
+
+
+
+        </section>
+
+
+<!-- ----------------------------------------------------------------------------------------- -->
+
+
+        <div class="border-bottom"
+            style="font-size:40px;text-align:left;font-family:'Orbitron', sans-serif;color: greenyellow;padding: 20px;margin: 20px;">
+            Conclusion <span>.</span></div>
+        <section style="background-color:rgba(0, 0, 0, 0.425);backdrop-filter: blur(5px);margin:20px;padding:20px">
+            <div>
+                <p style="font-family:'Poppins';font-size:20px;color:white;">
+
+                    After Learning the above mentioned Languages, Tools & Frameworks you are eligibe to create various
+                    projects and apply for a job.You can also learn about various other blockchain networks like bitcoin,
+                    ethereum, matic, etc. and how they function.
+                    <br> <br>
+                </p>
+                <div style="width:100% ;text-align:center">
+
+                    <img src="images/cryto-removebg-preview.png" style="width:30%" alt=""> <br>
+                </div>
+                <div style="font-family:'Poppins';font-size:20px;color:white;">
+                    To learn more about how blockchain works
+                    <a href="https://anubhavkaro.medium.com/blockchain-zero-to-hero-4fc969da6286" style="color:greenyellow">click here </a> <br> <br>
+                    <p style="color: aqua;">
+                        For Tuotrials, follow the links provided in the tutorial dropdown present on the navbar. <br>
+                       <p style="font-size: 40px ; font-family:'Mukta',sans-serif;color: greenyellow;">
+                           All THE BEST on your journey to become a blockchain developer.
+
+                       </p>
+                    </p> 
+                </div> 
+               
+            </div>
+
+            
+            
+            
+        </section>
+
+
+<!-- ----------------------------------------------------------------------------------------- -->
+
+
+        <section style="background-color:rgba(0, 0, 0, 0.425);backdrop-filter: blur(0px);margin:20px;padding:20px;margin-bottom:0px">
+            <footer class="text-muted" style="text-align:center">
+                <div class="container">
+                  <p class="">
+                    <a href="#">Back to top</a>
+                  </p>
+                  <p>Created by Akshat Verma</p>
+                  <p>Created using Html  |  CSS  |  Bootstrap </p>
+                </div>
+              </footer>
+
+        </section>
+
+
+        <!---------------------------------------------------------------------------------->
+
+
+
+
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
